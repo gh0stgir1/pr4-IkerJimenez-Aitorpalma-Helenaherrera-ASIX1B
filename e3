@@ -1,0 +1,23 @@
+### E3 ###
+### 29/11/23 ###
+### Aitor Palma ###
+
+def suma_pares_impares(limite):
+   if limite < 2:
+       return None
+   return sum(i for i in range(2, limite) if i % 2 == 0), sum(i for i in range(2, limite) if i % 2 != 0)
+
+while True:
+   try:
+       limite = int(input("Introduzca el límite: "))
+       break
+   except ValueError:
+       print("El límite introducido no es un número entero. Inténtelo de nuevo.")
+
+resultados = suma_pares_impares(limite)
+
+if resultados is not None:
+   print("Suma de todos los números pares menores a {}: {}".format(limite, resultados[0]))
+   print("Suma de todos los números impares menores a {}: {}".format(limite, resultados[1]))
+else:
+   print("El límite introducido no es válido. No se pueden calcular las sumas.")
