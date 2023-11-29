@@ -1,9 +1,12 @@
 """
 exercici número 5
 """
-num1 = int(input("Quin es el primer numero?"))
-num2 = int(input("Quin es el segon numero?"))
-mult = num1
-for x in range(num1):
-    mult = mult + num2
-print(mult)
+try:
+    num1 = int(input("Quin es el primer numero?"))
+    num2 = int(input("Quin es el segon numero?"))
+    mult = num1
+    for x in range(num1):
+        mult = mult + num2
+    print(mult)
+except:
+    print("Aixi no era")
