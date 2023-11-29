@@ -1,6 +1,7 @@
-### e4 ###
-### 29/11/23 ###
-
+""" 
+e4
+29/11/23 
+"""
 def crear_y_imprimir_tablero():
    BLANCO = "██"
    NEGRO = " "
