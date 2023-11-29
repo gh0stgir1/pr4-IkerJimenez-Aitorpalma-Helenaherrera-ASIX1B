@@ -1,0 +1,21 @@
+def imprimir_tablero(tablero):
+    for fila in tablero:
+        print(" ".join(fila))
+
+def crear_tablero():
+    tablero = []
+    for i in range(8):
+        fila = []
+        for j in range(8):
+            if (i + j) % 2 == 0:
+                fila.append(BLANCO)
+            else:
+                fila.append(NEGRO)
+        tablero.append(fila)
+    return tablero
+
+BLANCO = "██"
+NEGRO = " "
+
+tablero = crear_tablero()
+imprimir_tablero(tablero)
