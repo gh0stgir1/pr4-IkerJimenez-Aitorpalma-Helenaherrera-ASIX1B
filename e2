@@ -1,3 +1,6 @@
+"""
+exercici número 2
+"""
 try:
     num = 0
     altura = int(input("Quina es la altura?"))
