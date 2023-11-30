@@ -12,9 +12,9 @@ try:
     for num in range(1, limite + 1):
 
         if num % 2 == 0:
-            suma_parells += num
+            suma_parells = suma_parells + num
         else:
-            suma_senars += num
+            suma_senars = suma_senars + num
 
     print("Suma nombres senars: ", suma_senars)
     print("Suma nombres parells: ", suma_parells)
