@@ -9,7 +9,7 @@ try:
     suma_senars = 0
     suma_parells = 0
 
-    for num in range(1, limite + 1):
+    for num in range(1, limite):
 
         if num % 2 == 0:
             suma_parells += num
@@ -22,4 +22,5 @@ except ValueError:
     print("Valor invalid")
 
 print("Fi del programa")
+
 
