@@ -1,6 +1,5 @@
 """
 exercici número 2
-29/11/23 
 """
 try:
     num = 0
@@ -12,6 +11,6 @@ try:
         if i == altura:
             print((str(i) + " ") * altura)
         else:
-            print(str(i) + " " + " " * (2 * (i - 1) - 1) + str(i))
+            print(str(i) + " " * (2 * (i - 1) - 1) + str(i))
 except:
     print("Asi no era")
